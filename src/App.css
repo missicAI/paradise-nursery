@@ -1,0 +1,23 @@
+:root{font-family:Arial,sans-serif;color:#173c2b;background:#f4f8f1;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0}button{cursor:pointer;font:inherit}button:disabled{opacity:.55;cursor:not-allowed}
+.site{min-height:100vh;display:flex;flex-direction:column}
+.navbar{display:flex;justify-content:space-between;align-items:center;gap:18px;background:#fff;padding:20px max(3vw,20px);position:sticky;top:0;z-index:5;box-shadow:0 2px 12px #142b1715}
+.navbar strong{font-size:24px;color:#20583a}.navlinks{display:flex;gap:14px;align-items:center}.navlinks button{border:0;background:transparent;color:#214c37;padding:10px}
+.navlinks button:hover{text-decoration:underline}.cart-count{display:inline-block;background:#27864b;color:#fff;border-radius:30px;padding:3px 8px;margin-left:5px}
+.landing-page{min-height:66vh;display:grid;place-items:center;text-align:center;color:white;padding:60px 20px;background-image:linear-gradient(110deg,#0c382be0,#163d2688),url('/images/hero-garden.svg');background-position:center;background-size:cover}
+.landing-content{max-width:720px}.landing-content h1{font-size:clamp(36px,6vw,70px);margin:18px 0}.landing-content p{font-size:20px;line-height:1.6}
+button.primary{background:#267a45;color:white;border:0;border-radius:9px;padding:13px 25px;font-weight:bold}button.primary:hover{background:#185e34}
+.about{max-width:1000px;margin:0 auto;padding:50px 25px;text-align:center;line-height:1.9}.about h2{font-size:36px}
+.container{width:min(1180px,95%);margin:35px auto;flex:1}.intro{text-align:center;margin:45px 0}.intro h1{font-size:40px}
+.category{margin-bottom:48px}.category h2{font-size:27px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.product{background:white;border-radius:15px;overflow:hidden;box-shadow:0 5px 18px #14271418;border:1px solid #e2ecdf}
+.product img{display:block;width:100%;height:220px;object-fit:cover;background:#e7f3e8}.product-body{padding:20px}.product-body h3{margin-top:0}.price{font-weight:bold;font-size:22px;color:#286746}
+.product-bottom{display:flex;justify-content:space-between;align-items:center;gap:15px}.product button{background:#28774a;color:white;border:0;border-radius:8px;padding:10px}
+.cart-layout{display:grid;grid-template-columns:2fr 1fr;gap:25px}.cart-row{display:flex;align-items:center;gap:18px;background:white;padding:20px;margin-bottom:14px;border-radius:12px}
+.cart-row img{width:110px;height:110px;object-fit:cover;border-radius:8px}.cart-info{flex:1}.quantity{display:flex;gap:15px;align-items:center}
+.quantity button,.delete{border:1px solid #b8d2bb;background:white;border-radius:6px;padding:5px 13px;color:#185c37}.delete{color:#a72d2d}
+.cart-summary{background:white;padding:24px;border-radius:14px;align-self:start}.summary-line{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #ddd}
+.cart-summary button{width:100%;margin:10px 0}.secondary{background:white;border:2px solid #267a45;color:#267a45;border-radius:8px;padding:12px}
+.checkout-note{background:#e4f5df;padding:14px;border-radius:8px;color:#255c37}footer{background:#153c2c;color:white;padding:23px;text-align:center}
+@media(max-width:750px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cart-layout{grid-template-columns:1fr}.navlinks{gap:4px}.navbar strong{font-size:17px}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.cart-row{flex-wrap:wrap}}
